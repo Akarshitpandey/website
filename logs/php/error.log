@@ -1,0 +1,25 @@
+[21-Feb-2021 12:52:03 UTC] PHP Fatal error:  Uncaught RuntimeException: Failed to locate plugin C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\jetpack in C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-plugin-locator.php:47
+Stack trace:
+#0 C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-plugins-handler.php(99): Automattic\Jetpack\Autoloader\jp84939e330244e4e15279abc789e679bf\Plugin_Locator->find_current_plugin()
+#1 C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-autoloader.php(106): Automattic\Jetpack\Autoloader\jp84939e330244e4e15279abc789e679bf\Plugins_Handler->get_active_plugins(false, true)
+#2 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-hook.php(287): Automattic\Jetpack\Autoloader\jp84939e330244e4e15279abc789e679bf\Autoloader::Automattic\Jetpack\Autoloader\jp84939e330244e4e15279abc789e679bf\{closure}('')
+#3 C:\Users\LENOVO\Local Sites\hello\app\p in C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-plugin-locator.php on line 47
+[21-Feb-2021 12:52:03 UTC] PHP Stack trace:
+[21-Feb-2021 12:52:03 UTC] PHP   1. {main}() C:\Users\LENOVO\Local Sites\hello\app\public\wp-admin\admin-ajax.php:0
+[21-Feb-2021 12:52:03 UTC] PHP   2. do_action() C:\Users\LENOVO\Local Sites\hello\app\public\wp-admin\admin-ajax.php:184
+[21-Feb-2021 12:52:03 UTC] PHP   3. WP_Hook->do_action() C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\plugin.php:484
+[21-Feb-2021 12:52:03 UTC] PHP   4. WP_Hook->apply_filters() C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-hook.php:311
+[21-Feb-2021 12:52:03 UTC] PHP   5. wp_ajax_delete_plugin() C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-hook.php:287
+[21-Feb-2021 12:52:03 UTC] PHP   6. wp_send_json_success() C:\Users\LENOVO\Local Sites\hello\app\public\wp-admin\includes\ajax-actions.php:4583
+[21-Feb-2021 12:52:03 UTC] PHP   7. wp_send_json() C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\functions.php:4149
+[21-Feb-2021 12:52:03 UTC] PHP   8. wp_die() C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\functions.php:4123
+[21-Feb-2021 12:52:03 UTC] PHP   9. _ajax_wp_die_handler() C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\functions.php:3420
+[25-Feb-2021 13:08:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function enqueue_styles() on null in C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\header-footer-elementor\inc\class-header-footer-elementor.php:268
+Stack trace:
+#0 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-hook.php(287): Header_Footer_Elementor->enqueue_scripts('')
+#1 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\script-loader.php(2004): do_action('wp_enqueue_scri...')
+#4 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-customize-manager.php(454): wp_enqueue_scripts()
+#5 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-customize-manager.php(551): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 C:\Users\LENOVO\Local Sites\hello\app\public\wp-includes\class-wp-hook in C:\Users\LENOVO\Local Sites\hello\app\public\wp-content\plugins\header-footer-elementor\inc\class-header-footer-elementor.php on line 268
